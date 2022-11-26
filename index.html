@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" author="Mujtaba">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" author="Mujtaba">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+    <title>Show/Hide Login Form</title>
+</head>
+<body>
+    <section class="vh-100 gradient-custom" id="sec-1">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <div class="mb-md-2 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                    <p class="text-white-50 mb-5">Please enter your email and password</p>
+      
+                    <div class="form-outline form-white mb-4">
+                      <input type="email" id="typeEmailX" class="form-control form-control-lg" placeholder="Email">
+                      <label class="form-label" for="typeEmailX" ></label>
+                    </div>
+      
+                    <div class="form-outline form-white mb-4">
+                      <input type="password" id="typePasswordX" class="form-control form-control-lg" placeholder="Password">
+                      <label class="form-label" for="typePasswordX"></label>
+                    </div>
+      
+                    <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
+      
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+      
+                    <div class="d-flex justify-content-center text-center mt-5 pt-1">
+                        <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg" style="color: #1877f2;"></i></a>
+                        <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2" style="color: #1d9bf0;"></i></a>
+                        <a href="#!" class="text-white"><i class="fab fa-google fa-lg" style="color:#DB4437;"></i></a>
+                      </div>
+          
+      
+                  </div>
+      
+                  <div>
+                    <p class="mb-0">Don't have an account? <a href="#" class="text-white-50 fw-bold"  id="showSignUp" onclick="showSignUp()">Sign Up</a>
+                    </p>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vh-100 gradient-custom" id="sec-2">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <div class="mb-md-2 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-5 text-uppercase">Sign Up</h2>
+      
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" id="typeEmailX" class="form-control form-control-lg" placeholder="First Name">
+                        <label class="form-label" for="typeEmailX" ></label>
+                      </div>
+
+                      <div class="form-outline form-white mb-4">
+                        <input type="email" id="typeEmailX" class="form-control form-control-lg" placeholder="Last Name">
+                        <label class="form-label" for="typeEmailX" ></label>
+                      </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <input type="email" id="typeEmailX" class="form-control form-control-lg" placeholder="Email">
+                      <label class="form-label" for="typeEmailX" ></label>
+                    </div>
+      
+                    <div class="form-outline form-white mb-4">
+                      <input type="password" id="typePasswordX" class="form-control form-control-lg" placeholder="Password">
+                      <label class="form-label" for="typePasswordX"></label>
+                    </div>
+    
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Sign Up</button>
+      
+
+                  </div>
+      
+                  <div>
+                    <p class="mb-0">Already a member? <a href="#" class="text-white-50 fw-bold" id="showLogin" onclick="showLogin()">Login</a>
+                    </p>
+                  </div>
+
+                  <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                    <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg" style="color: #1877f2;"></i></a>
+                    <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2" style="color: #1d9bf0;"></i></a>
+                    <a href="#!" class="text-white"><i class="fab fa-google fa-lg" style="color:#DB4437;"></i></a>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="./index.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>
