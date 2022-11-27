@@ -10,7 +10,7 @@ function showSignUp() {
 }
 
 function showLogin() {
-    
+
   if (y.style.display = "none") {
     y.style.display = "block";
     x.style.display = "none"
